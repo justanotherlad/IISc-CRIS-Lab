@@ -1,0 +1,14 @@
+player_data_1 = sfix.Array(2)
+player_data_2 = sfix.Array(2)
+player_data_3 = sfix.Array(2)
+
+
+for i in range(2):
+	player_data_1[i] = sfix.get_input_from(0)
+	player_data_2[i] = sfix.get_input_from(1)
+	player_data_3[i] = sfix.get_input_from(2)
+	#print_ln("\n %s %s", player_data_1[i].reveal(),player_data_2[i].reveal())
+
+
+output  = player_data_1[1]==player_data_2[1]
+print_ln("\n%s", output.reveal())
